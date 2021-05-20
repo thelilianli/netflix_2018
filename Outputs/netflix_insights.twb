@@ -1,0 +1,1557 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.21.0111.1329                               -->
+<workbook original-version='18.1' source-build='2020.1.13 (20201.21.0111.1329)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='netflix_tableau' inline='true' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_tableau' name='textscan.1mencjd1mynj6019daxdt1cejbw3'>
+            <connection class='textscan' directory='C:/Users/theli/Documents/git/netflix_2018/Outputs/run 1' filename='netflix_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1mencjd1mynj6019daxdt1cejbw3' name='netflix_tableau.csv' table='[netflix_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='show_id' ordinal='0' />
+            <column datatype='string' name='listed_in_svalue' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='string' name='director' ordinal='4' />
+            <column datatype='string' name='cast' ordinal='5' />
+            <column datatype='string' name='country' ordinal='6' />
+            <column datatype='string' name='date_added' ordinal='7' />
+            <column datatype='integer' name='release_year' ordinal='8' />
+            <column datatype='string' name='rating' ordinal='9' />
+            <column datatype='string' name='duration' ordinal='10' />
+            <column datatype='string' name='listed_in' ordinal='11' />
+            <column datatype='string' name='description' ordinal='12' />
+            <column datatype='integer' name='country_scount' ordinal='13' />
+            <column datatype='string' name='country_svalue' ordinal='14' />
+            <column datatype='integer' name='listed_in_scount' ordinal='15' />
+            <column datatype='string' name='preferred' ordinal='16' />
+            <column datatype='integer' name='rottentomatoes_audience_score' ordinal='17' />
+            <column datatype='integer' name='rottentomatoes_audience_#reviews' ordinal='18' />
+            <column datatype='integer' name='rottentomatoes_tomatometer_score' ordinal='19' />
+            <column datatype='integer' name='rottentomatoes_critics_#reviews' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in_svalue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in_svalue]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>listed_in_svalue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_scount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[country_scount]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>country_scount</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_svalue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_svalue]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>country_svalue</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in_scount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[listed_in_scount]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>listed_in_scount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>preferred</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[preferred]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>preferred</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rottentomatoes_audience_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rottentomatoes_audience_score]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>rottentomatoes_audience_score</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rottentomatoes_audience_#reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rottentomatoes_audience_#reviews]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>rottentomatoes_audience_#reviews</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rottentomatoes_tomatometer_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rottentomatoes_tomatometer_score]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>rottentomatoes_tomatometer_score</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rottentomatoes_critics_#reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rottentomatoes_critics_#reviews]</local-name>
+            <parent-name>[netflix_tableau.csv]</parent-name>
+            <remote-alias>rottentomatoes_critics_#reviews</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Titles Count' datatype='integer' name='[Calculation_1610036911576633344]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([show_id])' />
+      </column>
+      <column caption='Rotten Tomato Audience Score' datatype='integer' name='[Calculation_1610036911578726401]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([rottentomatoes_audience_score])' />
+      </column>
+      <column caption='Rotten Tomato Sort' datatype='real' name='[Calculation_1610036911580864517]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1610036911578726401]+max([rottentomatoes_audience_#reviews])/max({fixed [Number of Records]: max([rottentomatoes_audience_#reviews])})/10' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Rotten Tomato Audience Reviews' datatype='integer' name='[Rotten Tomato Audience Score (copy)_1610036911579152386]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([rottentomatoes_audience_#reviews])' />
+      </column>
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Scount' datatype='integer' name='[country_scount]' role='measure' type='quantitative' />
+      <column caption='Country Svalue' datatype='string' name='[country_svalue]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='string' name='[date_added]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Listed In Scount' datatype='integer' name='[listed_in_scount]' role='measure' type='quantitative' />
+      <column caption='Listed In Svalue' datatype='string' name='[listed_in_svalue]' role='dimension' type='nominal' />
+      <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value='Neutral' />
+          <alias key='&quot;1&quot;' value='Preferred' />
+        </aliases>
+      </column>
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+      <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Country Svalue)' hidden='true' name='[Action (Country Svalue)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country_svalue]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Description,Rating,Release Year,Show Id,Title,Type)' hidden='true' name='[Action (Description,Rating,Release Year,Show Id,Title,Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[description]' />
+          <groupfilter function='level-members' level='[rating]' />
+          <groupfilter function='level-members' level='[none:release_year:ok]' />
+          <groupfilter function='level-members' level='[show_id]' />
+          <groupfilter function='level-members' level='[title]' />
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Listed In Svalue)' hidden='true' name='[Action (Listed In Svalue)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[listed_in_svalue]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Listed In Svalue,preferred)' hidden='true' name='[Action (Listed In Svalue,preferred)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[listed_in_svalue]' />
+          <groupfilter function='level-members' level='[preferred]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Type)' hidden='true' name='[Action (Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.619647' measure-ordering='alphabetic' measure-percentage='0.380353' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:preferred:nk]' type='palette'>
+            <map to='#b07aa1'>
+              <bucket>&quot;1&quot;</bucket>
+            </map>
+            <map to='#b4b4b4'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+      <datasources>
+        <datasource caption='netflix_tableau' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+        <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+        <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='%null%' value='Neutral' />
+            <alias key='&quot;1&quot;' value='Preferred' />
+          </aliases>
+        </column>
+        <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]'>
+        <groupfilter expression='ISNULL([country]) OR (NOT(CONTAINS(LOWER([country]), LOWER(&apos;canada&apos;))))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='canada' user:ui-pattern_type='contains'>
+          <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+        <target field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]'>
+        <groupfilter function='member' level='[none:preferred:nk]' member='&quot;1&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]'>
+        <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]'>
+        <groupfilter function='level-members' level='[none:type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter1' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Missing Out' type='sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Missing Out' />
+      </command>
+    </action>
+    <action caption='Filter2' name='[Action2]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Missing Out' type='sheet' worksheet='Shows by Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Shows by Country,Shows' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Missing Out' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Shows'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_tableau' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+            <column caption='Rotten Tomato Audience Score' datatype='integer' name='[Calculation_1610036911578726401]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([rottentomatoes_audience_score])' />
+            </column>
+            <column caption='Rotten Tomato Sort' datatype='real' name='[Calculation_1610036911580864517]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1610036911578726401]+max([rottentomatoes_audience_#reviews])/max({fixed [Number of Records]: max([rottentomatoes_audience_#reviews])})/10' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Rotten Tomato Audience Reviews' datatype='integer' name='[Rotten Tomato Audience Score (copy)_1610036911579152386]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([rottentomatoes_audience_#reviews])' />
+            </column>
+            <column-instance column='[country]' derivation='Attribute' name='[attr:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[listed_in]' derivation='Attribute' name='[attr:listed_in:nk]' pivot='key' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Svalue' datatype='string' name='[country_svalue]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column caption='Listed In Svalue' datatype='string' name='[listed_in_svalue]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[description]' derivation='None' name='[none:description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[show_id]' derivation='None' name='[none:show_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Neutral' />
+                <alias key='&quot;1&quot;' value='Preferred' />
+              </aliases>
+            </column>
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[rottentomatoes_audience_#reviews]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[rottentomatoes_audience_score]' role='measure' type='quantitative' />
+            <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1610036911578726401]' derivation='User' name='[usr:Calculation_1610036911578726401:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1610036911580864517]' derivation='User' name='[usr:Calculation_1610036911580864517:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1610036911580864517]' derivation='User' name='[usr:Calculation_1610036911580864517:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rotten Tomato Audience Score (copy)_1610036911579152386]' derivation='User' name='[usr:Rotten Tomato Audience Score (copy)_1610036911579152386:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Country Svalue)]'>
+            <groupfilter function='level-members' level='[country_svalue]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue)]'>
+            <groupfilter function='level-members' level='[listed_in_svalue]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue,preferred)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[listed_in_svalue]' />
+              <groupfilter function='level-members' level='[preferred]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[attr:country:nk]'>
+            <groupfilter function='level-members' level='[attr:country:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]' direction='DESC' measure-to-sort-by='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911580864517:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Country Svalue)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[attr:country:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue,preferred)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911578726401:ok]' value='196' />
+            <format attr='width' field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]' value='280' />
+            <format attr='width' field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Rotten Tomato Audience Score (copy)_1610036911579152386:ok]' value='208' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]' value='Search by Title'>
+              <formatted-text>
+                <run>Search by Title</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:description:nk]' />
+              <tooltip column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[attr:listed_in:nk]' />
+              <tooltip column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[attr:country:nk]' />
+              <lod column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:show_id:nk]' />
+              <lod column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911580864517:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk] / ([federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk] / ([federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:release_year:ok] / ([federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:rating:nk] / ([federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911578726401:ok] / [federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Rotten Tomato Audience Score (copy)_1610036911579152386:ok])))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{71B4E008-C60D-49FE-8BD2-962FEAE4AA78}' />
+    </worksheet>
+    <worksheet name='Shows by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_tableau' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+            <column caption='Titles Count' datatype='integer' name='[Calculation_1610036911576633344]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([show_id])' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Svalue' datatype='string' name='[country_svalue]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column caption='Listed In Svalue' datatype='string' name='[listed_in_svalue]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country_svalue]' derivation='None' name='[none:country_svalue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Neutral' />
+                <alias key='&quot;1&quot;' value='Preferred' />
+              </aliases>
+            </column>
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1610036911576633344]' derivation='User' name='[usr:Calculation_1610036911576633344:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Description,Rating,Release Year,Show Id,Title,Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[description]' />
+              <groupfilter function='level-members' level='[rating]' />
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[show_id]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue)]'>
+            <groupfilter function='level-members' level='[listed_in_svalue]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue,preferred)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[listed_in_svalue]' />
+              <groupfilter function='level-members' level='[preferred]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Type)]'>
+            <groupfilter function='level-members' level='[type]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country_svalue:nk]' direction='DESC' using='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[ctd:show_id:qk]' />
+          <slices>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Type)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Description,Rating,Release Year,Show Id,Title,Type)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue,preferred)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911576633344:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b4b4b4' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country_svalue:nk]</rows>
+        <cols>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911576633344:qk]</cols>
+      </table>
+      <simple-id uuid='{14DBAB68-51CA-4F89-A818-EBEA2492C559}' />
+    </worksheet>
+    <worksheet name='Shows by Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_tableau' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+            <column caption='Titles Count' datatype='integer' name='[Calculation_1610036911576633344]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([show_id])' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Svalue' datatype='string' name='[country_svalue]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column caption='Listed In Svalue' datatype='string' name='[listed_in_svalue]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Neutral' />
+                <alias key='&quot;1&quot;' value='Preferred' />
+              </aliases>
+            </column>
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1610036911576633344]' derivation='User' name='[usr:Calculation_1610036911576633344:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Country Svalue)]'>
+            <groupfilter function='level-members' level='[country_svalue]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Description,Rating,Release Year,Show Id,Title,Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[description]' />
+              <groupfilter function='level-members' level='[rating]' />
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[show_id]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue)]'>
+            <groupfilter function='level-members' level='[listed_in_svalue]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]' direction='DESC' using='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[ctd:show_id:qk]' />
+          <slices>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Listed In Svalue)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Country Svalue)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Description,Rating,Release Year,Show Id,Title,Type)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</rows>
+        <cols>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911576633344:qk]</cols>
+      </table>
+      <simple-id uuid='{615C0243-C359-406E-9AA8-EFC95A12E3F9}' />
+    </worksheet>
+    <worksheet name='Shows by listing'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_tableau' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+            <column caption='Titles Count' datatype='integer' name='[Calculation_1610036911576633344]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([show_id])' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Svalue' datatype='string' name='[country_svalue]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column caption='Listed In Svalue' datatype='string' name='[listed_in_svalue]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[listed_in_svalue]' derivation='None' name='[none:listed_in_svalue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Neutral' />
+                <alias key='&quot;1&quot;' value='Preferred' />
+              </aliases>
+            </column>
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1610036911576633344]' derivation='User' name='[usr:Calculation_1610036911576633344:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Country Svalue)]'>
+            <groupfilter function='level-members' level='[country_svalue]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Description,Rating,Release Year,Show Id,Title,Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[description]' />
+              <groupfilter function='level-members' level='[rating]' />
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[show_id]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Type)]'>
+            <groupfilter function='level-members' level='[type]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:listed_in_svalue:nk]' direction='DESC' using='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[ctd:show_id:qk]' />
+          <slices>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Type)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Country Svalue)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[Action (Description,Rating,Release Year,Show Id,Title,Type)]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</column>
+            <column>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]' />
+              <text column='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911576633344:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:listed_in_svalue:nk]</rows>
+        <cols>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911576633344:qk]</cols>
+      </table>
+      <simple-id uuid='{9D7C3E66-6CE0-4067-972F-99886D8B8754}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Missing Out'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='netflix_tableau' name='federated.1uzw57a08ur2tf176zmyf1p9w4p8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1uzw57a08ur2tf176zmyf1p9w4p8'>
+        <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[preferred]' derivation='None' name='[none:preferred:nk]' pivot='key' type='nominal' />
+        <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[preferred]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='%null%' value='Neutral' />
+            <alias key='&quot;1&quot;' value='Preferred' />
+          </aliases>
+        </column>
+        <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='87389' id='13' param='horz' type='layout-flow' w='99064' x='468' y='11726'>
+            <zone h='87389' id='3' param='vert' type='layout-flow' w='99064' x='468' y='11726'>
+              <zone fixed-size='346' h='38274' id='9' is-fixed='true' param='horz' type='layout-flow' w='99064' x='468' y='11726'>
+                <zone h='38274' id='6' name='Shows by listing' w='48449' x='468' y='11726'>
+                  <layout-cache fixed-size-h='231' minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38274' id='5' name='Shows by Country' w='50614' x='48917' y='11726'>
+                  <layout-cache fixed-size-h='1431' minwidth='257' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='436' h='49115' id='8' is-fixed='true' name='Shows' w='99064' x='468' y='50000'>
+                <layout-cache type-h='fixed' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='5752' id='17' type='text' w='20421' x='468' y='885'>
+            <formatted-text>
+              <run>Current Netflix Country</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5089' id='18' type='text' w='99064' x='468' y='6637'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff'>Here are the shows you are missing out on without VPN:</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#333333' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5752' id='26' type='text' w='18198' x='20889' y='885'>
+            <formatted-text>
+              <run>I am interested in </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5752' id='27' type='text' w='60445' x='39087' y='885'>
+            <formatted-text>
+              <run>View by</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='2876' id='16' mode='pattern' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]' show-title='false' type='filter' values='database' w='9362' x='9713' y='2212' />
+        <zone h='4757' id='14' mode='pattern' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]' type='filter' values='database' w='43651' x='54769' y='50996' />
+        <zone h='3429' id='15' mode='checkdropdown' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]' show-apply='true' show-title='false' type='filter' values='database' w='9362' x='27736' y='2102' />
+        <zone h='2987' id='19' mode='checkdropdown' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]' show-apply='true' show-title='false' type='filter' values='relevant' w='9362' x='42774' y='1991' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='34' param='vert' type='layout-flow' w='99064' x='468' y='885'>
+                <zone forceUpdate='true' h='5752' id='17' type='text' w='20421' x='468' y='885'>
+                  <formatted-text>
+                    <run>Current Netflix Country</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5752' id='26' type='text' w='18198' x='20889' y='885'>
+                  <formatted-text>
+                    <run>I am interested in </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5752' id='27' type='text' w='60445' x='39087' y='885'>
+                  <formatted-text>
+                    <run>View by</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5089' id='18' type='text' w='99064' x='468' y='6637'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff'>Here are the shows you are missing out on without VPN:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38274' id='6' is-fixed='true' name='Shows by listing' w='48449' x='468' y='11726'>
+                  <layout-cache fixed-size-h='231' minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38274' id='5' is-fixed='true' name='Shows by Country' w='50614' x='48917' y='11726'>
+                  <layout-cache fixed-size-h='1431' minwidth='257' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2876' id='16' mode='pattern' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]' show-title='false' type='filter' values='database' w='9362' x='9713' y='2212'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4757' id='14' mode='pattern' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]' type='filter' values='database' w='43651' x='54769' y='50996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3429' id='15' mode='checkdropdown' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]' show-apply='true' show-title='false' type='filter' values='database' w='9362' x='27736' y='2102'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2987' id='19' mode='checkdropdown' name='Shows' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]' show-apply='true' show-title='false' type='filter' values='relevant' w='9362' x='42774' y='1991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49115' id='8' is-fixed='true' name='Shows' w='99064' x='468' y='50000'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5E981AEB-54A1-4655-A9B2-7D5E1963136B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Missing Out'>
+      <viewpoints>
+        <viewpoint name='Shows'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Shows by Country'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Shows by listing'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C084CFF2-024A-435E-88E1-835154D40AEE}' />
+    </window>
+    <window class='worksheet' name='Shows by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country_svalue:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:listed_in_svalue:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D4888A28-9ADD-4B4C-904F-48CB37CEA1EE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Shows'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:date_added:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:description:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:listed_in:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:rating:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:release_year:ok]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:release_year:qk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:show_id:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:title:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:type:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[usr:Calculation_1610036911580864517:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3F51CA36-2297-400E-A2B8-CABE4D397351}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Shows by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country_svalue:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DA1C0FF0-B03E-4ED9-8D48-3598EEFA9E59}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Shows by listing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:preferred:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:country_svalue:nk]</field>
+            <field>[federated.1uzw57a08ur2tf176zmyf1p9w4p8].[none:listed_in_svalue:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F840BA56-0984-455E-A296-1CDA6462AA82}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Missing Out' width='192'>
+      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
+      gwAAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='119' name='Shows by Type' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

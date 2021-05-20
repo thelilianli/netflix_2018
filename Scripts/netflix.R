@@ -6,7 +6,7 @@ rm(list=ls()) ; options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx4g")
 ##########################################################################################
 
 # determining the latest scripts to call
-f <- paste0("C:/Users/theli/Documents/git/_Datasets/Netflix/")
+f <- paste0("C:/Users/theli/Documents/git/netflix_2018/")
 
 # inputs data folder
 d <- paste0(f,"Inputs/")
@@ -37,8 +37,7 @@ names(fulldata)
 nrow(fulldata)
 
 # checking data fields
-sort(sapply(fulldata, function(x) round(sum(is.na(x))/nrow(fulldata),2)), decreasing = TRUE) # checking for unreliable attributes
-# wow no missing
+sort(sapply(fulldata, function(x) round(sum(is.na(x)|(x %in% ""))/nrow(fulldata),2)), decreasing = TRUE) # checking for unreliable attributes
 sort(sapply(fulldata, function(x) length(unique(x))), decreasing = TRUE) # checking for useless factors
 
 # View(ftable(fulldata$show_id))#current dataset is unique on show id
@@ -89,8 +88,56 @@ fulldata <- merge.data.frame(fulldata,fulldata_category,by = "show_id",all.x = T
 nrow(fulldata)
 
 fulldata <- fulldata[!duplicated(fulldata),]# dedupping anyways for good measure
+fulldata <- fulldata[!(fulldata$country_svalue %in% c("",NA)),]# dedupping anyways for good measure
+fulldata <- fulldata[!(fulldata$listed_in_svalue %in% c("",NA)),]# dedupping anyways for good measure
 
-View(ftable(fulldata$listed_in_svalue))
-View(ftable(fulldata$country_svalue))
+# View(ftable(fulldata$listed_in_svalue))
+# View(ftable(fulldata$country_svalue))
+
+
+# fwrite(as.data.frame((ftable(fulldata$listed_in_svalue))),paste0(oPath,"preferences.csv"))
+fwrite(fulldata,paste0(oPath,"netflix_tableau.csv"))
+
+##########################################################################################
+# calculated fields
+##########################################################################################  
+# sum(fulldata$date_added %in% c(NA,""))#19
+fulldata$date_added <- as.Date(trimws(fulldata$date_added),"%B %d, %Y")
+# head(fulldata$date_added)
+# head(as.Date(trimws(fulldata$date_added),"%B %d, %Y"))
+# sum(is.na(fulldata$date_added1))#19
+# View(fulldata$date_added[is.na(fulldata$date_added1)])
+fulldata <- fulldata[!is.na(fulldata$date_added),]#removing the records with no date added
+
+##########################################################################################
+# supplementary datasets 
+##########################################################################################  
+
+# layer in my own preferences
+
+  pdat <- fread(paste0(d,"preferences.csv"))
+  pdat <- as.data.frame(pdat)
+  # names(pdat)
+  # nrow(pdat)
+  fulldata <- merge.data.frame(fulldata,pdat,by.x = "listed_in_svalue",by.y = "Var1",all.x = TRUE)
+  nrow(fulldata)
+
+# imdb data / ratings - scraped TV and movies separately
+  rdat <- fread(paste0(d,"netflix_rottent.csv"))
+  rdat <- as.data.frame(rdat)
+  names(rdat)
+  nrow(rdat)
+  rdat <- rdat[!duplicated(rdat$show_id),]
+  fulldata <- merge.data.frame(fulldata,rdat,by = "show_id",all.x = TRUE)
+  nrow(fulldata)
+# plotlines to avoid in description? NLP?
 
 fwrite(fulldata,paste0(oPath,"netflix_tableau.csv"))
+
+##########################################################################################
+# next steps - would be great if data was live 
+##########################################################################################  
+# layer in my watched list and personal ratings
+# layer in other user ratings - implement item-based collab model to reconmend movies/shows for myself
+# notify via email/sms especially with new titles added fitting my preferences
+# in reality though ... I don't need to be spending more time watching TV
