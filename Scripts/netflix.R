@@ -109,6 +109,11 @@ fulldata$date_added <- as.Date(trimws(fulldata$date_added),"%B %d, %Y")
 # View(fulldata$date_added[is.na(fulldata$date_added1)])
 fulldata <- fulldata[!is.na(fulldata$date_added),]#removing the records with no date added
 
+# sum(fulldata$release_year %in% c("",NA))
+# min(as.numeric(fulldata$release_year))
+fulldata$yrs_added_after_release <- year(fulldata$date_added) - as.numeric(fulldata$release_year)
+min(as.numeric(fulldata$yrs_added_after_release))
+
 ##########################################################################################
 # supplementary datasets 
 ##########################################################################################  
